@@ -1,0 +1,336 @@
+body,section,h1,h2,h3,p,ul,li,a {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+span {
+    color: #e41e56;
+}
+hr {
+    margin: 5rem 0 6rem;
+}
+button {
+    width: 10rem;
+    height: 4rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+}
+.scroll {
+    display: none;
+}
+
+/* ======================================== */
+/* ---------------- header ---------------- */
+/* ======================================== */
+#header {
+    background-color: #f2ece2;
+}
+.logo {
+    width: 2.5rem;
+}
+/* ================= top-left ================= */
+#top-left {
+    margin: auto 0;
+}
+#top-left > a {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+/* ================= top-right ================= */
+#top-right {
+    background-color: #fff;
+    border-radius: 1rem;
+}
+#top-right > ul {
+    border: 1px solid #aaa;
+    border-radius: 0.5rem;
+}
+#top-right > ul > li {
+    padding: 1rem;
+}
+#top-right > ul > li:first-child {
+    color: #aaa;
+}
+#top-right > ul > li:nth-child(-n+2) {
+    border-bottom: 1px solid #aaa;
+}
+#top-right > ul > li > i {
+    float: right;
+}
+#top-right > a {
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#top-right > button {
+    background-color: #000;
+}
+
+/* ======================================== */
+/* ----------------- main ----------------- */
+/* ======================================== */
+
+/* ================= hosting ================= */
+#main > h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#hosting > li > h3 {
+    font-size: 1.5rem;
+}
+#hosting > li > p > a {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+/* ================= users-left ================= */
+#users-left > h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+#users-left > button, #start-hosting > div > button {
+    background-color: #e41e56;
+}
+/* ================= users-right ================= */
+#user-right {
+    display: flex;
+}
+#user-right > li > p:first-of-type {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+#user-right > li > a,#security > ul > li > a {
+    color: #000;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+/* ================= security ================= */
+#security {
+    margin-bottom: 5rem;
+}
+#security > h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+#security > ul {
+    display: flex;
+}
+#security > ul > li > img {
+    width: 4rem;
+}
+/* ================= support ================= */
+#support {
+    display: flex;
+}
+#support > h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+#support > ul > li {
+    display: flex;
+}
+#support > ul > li > img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#support > ul > li > p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+#support > ul > li > p > span {
+    color: #000;
+    font-weight: bold;
+}
+/* ================= start-hosting ================= */
+#start-hosting > h2 {
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+#start-hosting > div > p {
+    font-size: 1.5rem;
+}
+
+/* ======================================== */
+/* ---------------- footer ---------------- */
+/* ======================================== */
+
+#footer {
+    margin-top: 5rem;
+    background-color: #f7f7f7;
+    border-top: 1px solid #aaa;
+}
+
+/* ================= footer-top ================= */
+#footer-top > ul > li:first-of-type {
+    font-weight: bold;
+}
+#footer-top > ul > li {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    
+}
+#footer-top > ul > li > a {
+    color: #000;
+}
+/* ================= footer-bottom ================= */
+#footer-bottom,#footer-bottom-left > div,#footer-bottom-left > div > ul {
+    display: flex;
+}
+#footer-bottom-left > div > p,#footer-bottom-left > p  {
+    font-size: 0.8rem;
+}
+#footer-bottom-left > div > ul > li > a {
+    color: #000;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+}
+#footer-bottom-right {
+    display: flex;
+    margin-left: auto;
+}
+#footer-bottom-right > li > a {
+    color: #000;
+    margin-left: 2rem;
+}
+
+
+/* 768px以上で6列幅のボックス */
+@media (max-width: 768px) {
+    hr {
+        margin: 2rem;
+    }
+    .scroll {
+        display: flex;
+        margin-left: 1rem;
+        font-size: 0.1rem;
+    }
+    .scroll > li {
+        margin-right: 0.4rem;
+    }
+    .scroll > li:nth-last-of-type(-n+3) {
+        opacity: 0.3;
+    }
+/* ======================================== */
+/* ---------------- header ---------------- */
+/* ======================================== */
+    #header > img {
+        display: none;
+    }
+    #header {
+        padding: 2rem;
+        font-size: 0.9rem;
+    }
+    #top-left > h1 {
+        font-size: 2rem;
+    }
+    #top-right {
+        margin-top: 3rem;
+        padding: 2rem 1.5rem;
+    }
+    #top-right > p {
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+    #top-right > ul > li {
+        font-size: 1.1rem;
+    }
+    #top-right > a > span > i {
+        display: none;
+    }
+    #top-right > button {
+        margin-top: 3.5rem;
+        font-size: 1.2rem;
+    }
+/* ======================================== */
+/* ----------------- main ----------------- */
+/* ======================================== */
+    #main > h2{
+        font-size: 2.2rem;
+    }
+    #hosting > li:nth-of-type(n+2),
+    #security > ul > li:nth-of-type(n+2),
+    #support > ul > li:nth-of-type(n+2) {
+        display: none;
+    }
+    #hosting > li > img {
+        width: 18rem;
+    }
+    #hosting > li {
+        margin-bottom: 2rem;
+    }
+    #users-left > h2 {
+        font-size: 2rem;
+    }
+    #users-left > button {
+        width: 6rem;
+        height: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    #security > h2 {
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
+    #security > ul {
+        display: block;
+        margin: 0 2rem;
+    }
+    #support > h2 {
+        font-size: 1.9rem;
+        margin: 2rem 2rem 2rem 1rem;
+    }
+    #support > ul > li {
+        display: block;
+    }
+    #support > ul > li > img {
+        opacity: 0.1;
+    }
+    #support > ul > li > p {
+        font-size: 1rem;
+    }
+    #support > ul > li > p > span {
+        font-size: 1.5rem;
+    }
+    #start-hosting > h2 {
+        font-size: 1.9rem;
+        margin: 0 2rem 3rem;
+    }
+    #start-hosting > div > p {
+        font-size: 1rem;
+    }
+    #start-hosting > div > button {
+        width: 8rem;
+        height: 3.5rem;
+    }
+
+    /* ======================================== */
+    /* ---------------- footer ---------------- */
+    /* ======================================== */
+    #footer-top, #footer-bottom {
+        display: block;
+        margin: 0 2rem;
+    }
+    #footer-top > ul:nth-of-type(-n+3) {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 0.5px solid #aaa;
+    }
+    #footer-bottom-left > div {
+        display: block;
+    }
+    #footer-bottom-left > div > ul > li > a {
+        font-size: 0.9rem;
+        margin: 0 1rem 0 0;
+    }
+    #footer-bottom-right > li > a {
+        margin: 0 1rem 0 0;
+        font-size: 0.8rem;
+        border-bottom: 0.5px solid #000;
+    }
+    #footer-bottom-right > li:nth-of-type(n+3) {
+        display: none;
+    } 
+
+}
